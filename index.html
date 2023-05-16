@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="#irAlNavbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#irAlNavbar">Martin Ramseyer</a>
+        <a class="navbar-brand" href="index.html">Martin Ramseyer</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -32,17 +32,30 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#sobre_mi">Sobre mí</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#conteiner_proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#conteiner_contacto">Contacto</a>
+            </li>
+            <li class="nav-item dropdown d-none d-lg-inline">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
+                id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Menu
+                Menú
               </a>
-              <ul class="dropdown-menu dropdown-menu-end">
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+              >
                 <li><a class="dropdown-item" href="#sobre_mi">Sobre mí</a></li>
                 <li>
                   <a class="dropdown-item" href="#conteiner_proyectos"
@@ -121,6 +134,7 @@
     <!-- Proyectos -->
 
     <div id="conteiner_proyectos">
+      <h3>Mis proyectos</h3>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -186,73 +200,43 @@
       </div>
     </div>
 
-    <!-- Contacto -->
-    <div class="container text-center" id="conteiner_contacto">
-      <div class="row align-items-start">
-        <div class="col">
-          <h5>Información de contacto</h5>
-          <p>Nombre: Martin Ramseyer</p>
-          <p>Correo electrónico: martinramseyer4@gmail.com</p>
-          <p>Dirección: Santa Fe, Argentina</p>
-        </div>
-        <div class="col">
-          <h5>Formulario de contacto</h5>
-          <form action="form.php" method="post">
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Nombre"
-                name="nombre"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Correo electrónico"
-                name="correo"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Asunto"
-                name="asunto"
-              />
-            </div>
-            <div class="mb-3">
-              <textarea
-                class="form-control"
-                placeholder="Mensaje"
-                name="mensaje"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-dark bg-dark">
-              Enviar
-            </button>
-          </form>
-        </div>
-        <div class="col">
-          <h5>Redes sociales</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/martin-ramseyer-1456b3248/"
-                target="_blank"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/Martin-Ramseyer" target="_blank"
-                >GitHub</a
-              >
-            </li>
-          </ul>
+    <section class="contact-section" id="conteiner_contacto">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h5>Información de contacto</h5>
+            <p>Nombre: Martin Ramseyer</p>
+            <p>Correo electrónico: martinramseyer4@gmail.com</p>
+            <p>Dirección: Santa Fe, Argentina</p>
+          </div>
+          <div class="col">
+            <img
+              src="src/images/logo.png"
+              href="index.html"
+              alt="Logo"
+              class="logo"
+            />
+          </div>
+          <div class="col">
+            <h5>Redes sociales</h5>
+            <ul class="social-media-list">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/martin-ramseyer-1456b3248/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/Martin-Ramseyer" target="_blank"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

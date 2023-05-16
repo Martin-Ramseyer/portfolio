@@ -6,17 +6,47 @@ body {
   }
   
   /* Estilos para la barra de navegación */
-  .navbar {
-    background-color: #343a40; 
+/* Estilos para el navbar */
+.navbar {
+    background-color: #343a40; /* Color de fondo */
+    padding: 0.5rem 1rem; /* Espaciado interno */
   }
   
   .navbar-brand {
-    font-weight: bold;
+    font-size: 1.5rem; /* Tamaño de fuente del texto del enlace del logo */
   }
   
-  .nav-link {
-    color: #fff; 
+  .navbar-toggler {
+    border: none; /* Quitar el borde del botón de la hamburguesa */
   }
+  
+  .nav-item {
+    margin-left: 1rem; /* Espaciado entre elementos del menú */
+  }
+  
+  .dropdown-item {
+    color: #fff; /* Color de texto para elementos del menú desplegable */
+  }
+  
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: #6c757d; /* Color de fondo al pasar el cursor o enfocar */
+  }
+  
+  .dropdown-menu {
+    background-color: #343a40; /* Color de fondo del menú desplegable */
+    border: none; /* Quitar el borde del menú desplegable */
+  }
+  
+  .dropdown-menu a {
+    color: #fff; /* Color de texto para elementos del menú desplegable */
+  }
+  
+  .dropdown-menu a:hover,
+  .dropdown-menu a:focus {
+    background-color: #6c757d; /* Color de fondo al pasar el cursor o enfocar */
+  }
+  
   
   /* Estilos para el contenedor de "Sobre mí" */
   #sobre_mi {
@@ -103,45 +133,57 @@ body {
 }
 
 
-/* contacto */
+.contact-section {
+  margin-top: 48px;
+  padding: 30px;
+  background-color: #f1f1f1;
+}
 
-/* Estilos para el contenedor principal */
-#conteiner_contacto {
-    margin-top: 48px;
-    padding: 30px;
-    background-color: #f1f1f1;
+.contact-section .logo {
+  margin-top: 0;
+  max-width: 250px;
+  height: auto;
+}
+
+.contact-section h5 {
+  font-size: 18px;
+}
+
+.contact-section p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contact-section ul.social-media-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contact-section ul.social-media-list li {
+  margin-bottom: 10px;
+}
+
+.contact-section ul.social-media-list li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-section ul.social-media-list li a:hover {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .contact-section .col {
+    flex-basis: 100%;
+    max-width: 100%;
   }
-  
-  /* Estilos para el formulario de contacto */
-  #conteiner_contacto form {
-    margin-top: 20px;
+
+  .contact-section {
+    margin-top: 1rem;
   }
-  
-  #conteiner_contacto .form-control {
-    margin-bottom: 10px;
+
+  .contact-section .row {
+    gap: 3rem;
   }
-  
-  #conteiner_contacto .btn-primary {
-    width: 100%;
-  }
-  
-  /* Estilos para la lista de redes sociales */
-  #conteiner_contacto ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-  }
-  
-  #conteiner_contacto ul li {
-    margin-bottom: 10px;
-  }
-  
-  #conteiner_contacto ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  #conteiner_contacto ul li a:hover {
-    color: #000;
-  }
-  
+}
