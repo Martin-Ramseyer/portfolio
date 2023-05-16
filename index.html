@@ -199,20 +199,35 @@
           <h5>Formulario de contacto</h5>
           <form action="form.php" method="post">
             <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Nombre" />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre"
+                name="nombre"
+              />
             </div>
             <div class="mb-3">
               <input
                 type="email"
                 class="form-control"
                 placeholder="Correo electrónico"
+                name="correo"
               />
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Asunto" />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Asunto"
+                name="asunto"
+              />
             </div>
             <div class="mb-3">
-              <textarea class="form-control" placeholder="Mensaje"></textarea>
+              <textarea
+                class="form-control"
+                placeholder="Mensaje"
+                name="mensaje"
+              ></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-dark bg-dark">
               Enviar
