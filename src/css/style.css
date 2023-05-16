@@ -54,7 +54,7 @@ body {
 /* Estilos para el contenedor de "Sobre mí" */
 #sobre_mi {
   margin-top: 48px;
-  background-color: #fff;
+  background-color: #f1f1f1;
   padding: 20px; 
   border-radius: 5px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
@@ -62,6 +62,7 @@ body {
 
 .card {
   border: none;
+  background-color: #f1f1f1;
 }
 
 .card-title {
@@ -194,4 +195,8 @@ color: #000;
 .contact-section .row {
   gap: 3rem;
 }
+}
+
+footer{
+  background-color: #f1f1f1;
 }
