@@ -6,13 +6,17 @@ body {
 }
 
 /* Estilos para la barra de navegación */
-/* Estilos para la barra de navegación */
+
 .navbar {
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: #343a40; /* Color de fondo */
   padding: 0.5rem 1rem; /* Espaciado interno */
+}
+
+.btn-no-border {
+  border: none;
 }
 
 .navbar-brand {
@@ -200,3 +204,70 @@ color: #000;
 footer{
   background-color: #f1f1f1;
 }
+
+/* Modo Oscuro */
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .navbar,
+.dark-mode #sobre_mi,
+.dark-mode .contact-section,
+.dark-mode footer {
+  background-color: #111;
+  color: #fff;
+}
+
+.dark-mode #sobre_mi .card {
+  background-color: #111;
+  color: #fff;
+}
+
+.dark-mode .card {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .card-title,
+.dark-mode .card-text {
+  color: #fff;
+}
+
+.dark-mode .contact-section .social-media-list li a {
+  color: #fff;
+}
+
+.dark-mode .contact-section .social-media-list li a:hover {
+  color: #000;
+}
+
+.dark-mode .btn {
+  background-color: #222;
+  color: #fff;
+  border-color: #fff;
+}
+
+.dark-mode .btn:hover,
+.dark-mode .btn:focus,
+.dark-mode .btn:active,
+.dark-mode .btn-primary,
+.dark-mode .btn-primary:hover,
+.dark-mode .btn-primary:focus,
+.dark-mode .btn-primary:active,
+.dark-mode .btn-secondary,
+.dark-mode .btn-secondary:hover,
+.dark-mode .btn-secondary:focus,
+.dark-mode .btn-secondary:active {
+  background-color: #333;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Botón #dark-mode-toggle */
+#dark-mode-toggle {
+  background-color: #212529 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
